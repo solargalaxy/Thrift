@@ -1,0 +1,795 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA095D7B20D0CB66006E340F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA095D7A20D0CB66006E340F /* AppDelegate.m */; };
+		EA095D7E20D0CB66006E340F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA095D7D20D0CB66006E340F /* ViewController.m */; };
+		EA095D8120D0CB66006E340F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA095D7F20D0CB66006E340F /* Main.storyboard */; };
+		EA095D8320D0CB67006E340F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA095D8220D0CB67006E340F /* Assets.xcassets */; };
+		EA095D8620D0CB67006E340F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA095D8420D0CB67006E340F /* LaunchScreen.storyboard */; };
+		EA095D8920D0CB67006E340F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA095D8820D0CB67006E340F /* main.m */; };
+		EA095D9320D0CB67006E340F /* ThriftTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA095D9220D0CB67006E340F /* ThriftTests.m */; };
+		EA095D9E20D0CB67006E340F /* ThriftUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA095D9D20D0CB67006E340F /* ThriftUITests.m */; };
+		EA85E0AF20DA3C2C008C0DC6 /* ChatThriftFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = EA85E0AE20DA3C2C008C0DC6 /* ChatThriftFactory.m */; };
+		EAAA495320D3A2F600374361 /* TSharedProcessorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAA491C20D3A2F600374361 /* TSharedProcessorFactory.m */; };
+		EAAA495420D3A2F600374361 /* TMemoryBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAA491E20D3A2F600374361 /* TMemoryBuffer.m */; };
+		EAAA495520D3A2F600374361 /* THTTPTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAA492020D3A2F600374361 /* THTTPTransport.m */; };
+		EAAA495620D3A2F600374361 /* TFramedTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAA492120D3A2F600374361 /* TFramedTransport.m */; };
+		EAAA495720D3A2F600374361 /* TNSStreamTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAA492520D3A2F600374361 /* TNSStreamTransport.m */; };
+		EAAA495820D3A2F600374361 /* TNSFileHandleTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAA492620D3A2F600374361 /* TNSFileHandleTransport.m */; };
+		EAAA495920D3A2F600374361 /* TSSLSocketTransportError.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAA492820D3A2F600374361 /* TSSLSocketTransportError.m */; };
+		EAAA495A20D3A2F600374361 /* TTransportError.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAA492B20D3A2F600374361 /* TTransportError.m */; };
+		EAAA495B20D3A2F600374361 /* TSocketTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAA492E20D3A2F600374361 /* TSocketTransport.m */; };
+		EAAA495C20D3A2F600374361 /* TSSLSocketTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAA493020D3A2F600374361 /* TSSLSocketTransport.m */; };
+		EAAA495D20D3A2F600374361 /* THTTPSessionTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAA493320D3A2F600374361 /* THTTPSessionTransport.m */; };
+		EAAA495E20D3A2F600374361 /* TBaseClient.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAA493520D3A2F600374361 /* TBaseClient.m */; };
+		EAAA495F20D3A2F600374361 /* TSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAA493820D3A2F600374361 /* TSocketServer.m */; };
+		EAAA496020D3A2F600374361 /* TProtocolUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAA493B20D3A2F600374361 /* TProtocolUtil.m */; };
+		EAAA496120D3A2F600374361 /* TProtocolDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAA494220D3A2F600374361 /* TProtocolDecorator.m */; };
+		EAAA496220D3A2F600374361 /* TBinaryProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAA494420D3A2F600374361 /* TBinaryProtocol.m */; };
+		EAAA496320D3A2F600374361 /* TProtocolError.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAA494520D3A2F600374361 /* TProtocolError.m */; };
+		EAAA496420D3A2F600374361 /* TMultiplexedProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAA494720D3A2F600374361 /* TMultiplexedProtocol.m */; };
+		EAAA496520D3A2F600374361 /* TCompactProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAA494920D3A2F600374361 /* TCompactProtocol.m */; };
+		EAAA496620D3A2F600374361 /* TApplicationError.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAA494A20D3A2F600374361 /* TApplicationError.m */; };
+		EAAA496720D3A2F600374361 /* TError.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAA494E20D3A2F600374361 /* TError.m */; };
+		EAF8AB8320DA3A580038F6AC /* ChatRoomServiceStruct.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF8AB7D20DA3A580038F6AC /* ChatRoomServiceStruct.m */; };
+		EAF8AB8420DA3A580038F6AC /* ChatRoomServiceCallbackService.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF8AB7E20DA3A580038F6AC /* ChatRoomServiceCallbackService.m */; };
+		EAF8AB8520DA3A580038F6AC /* ChatRoomServiceException.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF8AB8020DA3A580038F6AC /* ChatRoomServiceException.m */; };
+		EAF8AB8620DA3A580038F6AC /* ChatRoomServiceChatService.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF8AB8220DA3A580038F6AC /* ChatRoomServiceChatService.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA095D8F20D0CB67006E340F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA095D6E20D0CB66006E340F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA095D7520D0CB66006E340F;
+			remoteInfo = Thrift;
+		};
+		EA095D9A20D0CB67006E340F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA095D6E20D0CB66006E340F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA095D7520D0CB66006E340F;
+			remoteInfo = Thrift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA095D7620D0CB66006E340F /* Thrift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thrift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA095D7920D0CB66006E340F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EA095D7A20D0CB66006E340F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EA095D7C20D0CB66006E340F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EA095D7D20D0CB66006E340F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EA095D8020D0CB66006E340F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA095D8220D0CB67006E340F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA095D8520D0CB67006E340F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA095D8720D0CB67006E340F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA095D8820D0CB67006E340F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA095D8E20D0CB67006E340F /* ThriftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThriftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA095D9220D0CB67006E340F /* ThriftTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThriftTests.m; sourceTree = "<group>"; };
+		EA095D9420D0CB67006E340F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA095D9920D0CB67006E340F /* ThriftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThriftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA095D9D20D0CB67006E340F /* ThriftUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThriftUITests.m; sourceTree = "<group>"; };
+		EA095D9F20D0CB67006E340F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA85E0AD20DA3C2C008C0DC6 /* ChatThriftFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatThriftFactory.h; sourceTree = "<group>"; };
+		EA85E0AE20DA3C2C008C0DC6 /* ChatThriftFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatThriftFactory.m; sourceTree = "<group>"; };
+		EAAA491B20D3A2F600374361 /* TProcessorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProcessorFactory.h; sourceTree = "<group>"; };
+		EAAA491C20D3A2F600374361 /* TSharedProcessorFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSharedProcessorFactory.m; sourceTree = "<group>"; };
+		EAAA491E20D3A2F600374361 /* TMemoryBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMemoryBuffer.m; sourceTree = "<group>"; };
+		EAAA491F20D3A2F600374361 /* TTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTransport.h; sourceTree = "<group>"; };
+		EAAA492020D3A2F600374361 /* THTTPTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THTTPTransport.m; sourceTree = "<group>"; };
+		EAAA492120D3A2F600374361 /* TFramedTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFramedTransport.m; sourceTree = "<group>"; };
+		EAAA492220D3A2F600374361 /* TTransportError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTransportError.h; sourceTree = "<group>"; };
+		EAAA492320D3A2F600374361 /* TAsyncTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAsyncTransport.h; sourceTree = "<group>"; };
+		EAAA492420D3A2F600374361 /* THTTPSessionTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THTTPSessionTransport.h; sourceTree = "<group>"; };
+		EAAA492520D3A2F600374361 /* TNSStreamTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSStreamTransport.m; sourceTree = "<group>"; };
+		EAAA492620D3A2F600374361 /* TNSFileHandleTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSFileHandleTransport.m; sourceTree = "<group>"; };
+		EAAA492720D3A2F600374361 /* TSSLSocketTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSSLSocketTransport.h; sourceTree = "<group>"; };
+		EAAA492820D3A2F600374361 /* TSSLSocketTransportError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSSLSocketTransportError.m; sourceTree = "<group>"; };
+		EAAA492920D3A2F600374361 /* TSocketTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSocketTransport.h; sourceTree = "<group>"; };
+		EAAA492A20D3A2F600374361 /* TMemoryBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMemoryBuffer.h; sourceTree = "<group>"; };
+		EAAA492B20D3A2F600374361 /* TTransportError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTransportError.m; sourceTree = "<group>"; };
+		EAAA492C20D3A2F600374361 /* TFramedTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFramedTransport.h; sourceTree = "<group>"; };
+		EAAA492D20D3A2F600374361 /* THTTPTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THTTPTransport.h; sourceTree = "<group>"; };
+		EAAA492E20D3A2F600374361 /* TSocketTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSocketTransport.m; sourceTree = "<group>"; };
+		EAAA492F20D3A2F600374361 /* TSSLSocketTransportError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSSLSocketTransportError.h; sourceTree = "<group>"; };
+		EAAA493020D3A2F600374361 /* TSSLSocketTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSSLSocketTransport.m; sourceTree = "<group>"; };
+		EAAA493120D3A2F600374361 /* TNSFileHandleTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSFileHandleTransport.h; sourceTree = "<group>"; };
+		EAAA493220D3A2F600374361 /* TNSStreamTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSStreamTransport.h; sourceTree = "<group>"; };
+		EAAA493320D3A2F600374361 /* THTTPSessionTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THTTPSessionTransport.m; sourceTree = "<group>"; };
+		EAAA493420D3A2F600374361 /* Thrift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thrift.h; sourceTree = "<group>"; };
+		EAAA493520D3A2F600374361 /* TBaseClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBaseClient.m; sourceTree = "<group>"; };
+		EAAA493620D3A2F600374361 /* TError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TError.h; sourceTree = "<group>"; };
+		EAAA493820D3A2F600374361 /* TSocketServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSocketServer.m; sourceTree = "<group>"; };
+		EAAA493920D3A2F600374361 /* TSocketServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSocketServer.h; sourceTree = "<group>"; };
+		EAAA493B20D3A2F600374361 /* TProtocolUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TProtocolUtil.m; sourceTree = "<group>"; };
+		EAAA493C20D3A2F600374361 /* TProtocolDecorator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProtocolDecorator.h; sourceTree = "<group>"; };
+		EAAA493D20D3A2F600374361 /* TProtocolError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProtocolError.h; sourceTree = "<group>"; };
+		EAAA493E20D3A2F600374361 /* TBinaryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBinaryProtocol.h; sourceTree = "<group>"; };
+		EAAA493F20D3A2F600374361 /* TCompactProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCompactProtocol.h; sourceTree = "<group>"; };
+		EAAA494020D3A2F600374361 /* TMultiplexedProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMultiplexedProtocol.h; sourceTree = "<group>"; };
+		EAAA494120D3A2F600374361 /* TBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBase.h; sourceTree = "<group>"; };
+		EAAA494220D3A2F600374361 /* TProtocolDecorator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TProtocolDecorator.m; sourceTree = "<group>"; };
+		EAAA494320D3A2F600374361 /* TProtocolUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProtocolUtil.h; sourceTree = "<group>"; };
+		EAAA494420D3A2F600374361 /* TBinaryProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBinaryProtocol.m; sourceTree = "<group>"; };
+		EAAA494520D3A2F600374361 /* TProtocolError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TProtocolError.m; sourceTree = "<group>"; };
+		EAAA494620D3A2F600374361 /* TProtocolFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProtocolFactory.h; sourceTree = "<group>"; };
+		EAAA494720D3A2F600374361 /* TMultiplexedProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMultiplexedProtocol.m; sourceTree = "<group>"; };
+		EAAA494820D3A2F600374361 /* TProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProtocol.h; sourceTree = "<group>"; };
+		EAAA494920D3A2F600374361 /* TCompactProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCompactProtocol.m; sourceTree = "<group>"; };
+		EAAA494A20D3A2F600374361 /* TApplicationError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TApplicationError.m; sourceTree = "<group>"; };
+		EAAA494B20D3A2F600374361 /* TSharedProcessorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSharedProcessorFactory.h; sourceTree = "<group>"; };
+		EAAA494C20D3A2F600374361 /* TProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProcessor.h; sourceTree = "<group>"; };
+		EAAA494D20D3A2F600374361 /* TBaseClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBaseClient.h; sourceTree = "<group>"; };
+		EAAA494E20D3A2F600374361 /* TError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TError.m; sourceTree = "<group>"; };
+		EAAA494F20D3A2F600374361 /* TApplicationError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TApplicationError.h; sourceTree = "<group>"; };
+		EAF8AB7B20DA3A580038F6AC /* ChatRoomServiceStruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatRoomServiceStruct.h; sourceTree = "<group>"; };
+		EAF8AB7C20DA3A580038F6AC /* ChatRoomServiceChatService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatRoomServiceChatService.h; sourceTree = "<group>"; };
+		EAF8AB7D20DA3A580038F6AC /* ChatRoomServiceStruct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatRoomServiceStruct.m; sourceTree = "<group>"; };
+		EAF8AB7E20DA3A580038F6AC /* ChatRoomServiceCallbackService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatRoomServiceCallbackService.m; sourceTree = "<group>"; };
+		EAF8AB7F20DA3A580038F6AC /* ChatRoomServiceCallbackService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatRoomServiceCallbackService.h; sourceTree = "<group>"; };
+		EAF8AB8020DA3A580038F6AC /* ChatRoomServiceException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatRoomServiceException.m; sourceTree = "<group>"; };
+		EAF8AB8120DA3A580038F6AC /* ChatRoomServiceException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatRoomServiceException.h; sourceTree = "<group>"; };
+		EAF8AB8220DA3A580038F6AC /* ChatRoomServiceChatService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatRoomServiceChatService.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA095D7320D0CB66006E340F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA095D8B20D0CB67006E340F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA095D9620D0CB67006E340F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA095D6D20D0CB66006E340F = {
+			isa = PBXGroup;
+			children = (
+				EA095D7820D0CB66006E340F /* Thrift */,
+				EA095D9120D0CB67006E340F /* ThriftTests */,
+				EA095D9C20D0CB67006E340F /* ThriftUITests */,
+				EA095D7720D0CB66006E340F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA095D7720D0CB66006E340F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA095D7620D0CB66006E340F /* Thrift.app */,
+				EA095D8E20D0CB67006E340F /* ThriftTests.xctest */,
+				EA095D9920D0CB67006E340F /* ThriftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA095D7820D0CB66006E340F /* Thrift */ = {
+			isa = PBXGroup;
+			children = (
+				EAAA491320D3A2F600374361 /* ThriftSrc */,
+				EA095D7920D0CB66006E340F /* AppDelegate.h */,
+				EA095D7A20D0CB66006E340F /* AppDelegate.m */,
+				EA095D7C20D0CB66006E340F /* ViewController.h */,
+				EA095D7D20D0CB66006E340F /* ViewController.m */,
+				EA85E0AD20DA3C2C008C0DC6 /* ChatThriftFactory.h */,
+				EA85E0AE20DA3C2C008C0DC6 /* ChatThriftFactory.m */,
+				EA095D7F20D0CB66006E340F /* Main.storyboard */,
+				EA095D8220D0CB67006E340F /* Assets.xcassets */,
+				EA095D8420D0CB67006E340F /* LaunchScreen.storyboard */,
+				EA095D8720D0CB67006E340F /* Info.plist */,
+				EA095D8820D0CB67006E340F /* main.m */,
+			);
+			path = Thrift;
+			sourceTree = "<group>";
+		};
+		EA095D9120D0CB67006E340F /* ThriftTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA095D9220D0CB67006E340F /* ThriftTests.m */,
+				EA095D9420D0CB67006E340F /* Info.plist */,
+			);
+			path = ThriftTests;
+			sourceTree = "<group>";
+		};
+		EA095D9C20D0CB67006E340F /* ThriftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EA095D9D20D0CB67006E340F /* ThriftUITests.m */,
+				EA095D9F20D0CB67006E340F /* Info.plist */,
+			);
+			path = ThriftUITests;
+			sourceTree = "<group>";
+		};
+		EAAA491320D3A2F600374361 /* ThriftSrc */ = {
+			isa = PBXGroup;
+			children = (
+				EAAA491420D3A2F600374361 /* generated */,
+				EAAA491B20D3A2F600374361 /* TProcessorFactory.h */,
+				EAAA491C20D3A2F600374361 /* TSharedProcessorFactory.m */,
+				EAAA491D20D3A2F600374361 /* transport */,
+				EAAA493420D3A2F600374361 /* Thrift.h */,
+				EAAA493520D3A2F600374361 /* TBaseClient.m */,
+				EAAA493620D3A2F600374361 /* TError.h */,
+				EAAA493720D3A2F600374361 /* server */,
+				EAAA493A20D3A2F600374361 /* protocol */,
+				EAAA494A20D3A2F600374361 /* TApplicationError.m */,
+				EAAA494B20D3A2F600374361 /* TSharedProcessorFactory.h */,
+				EAAA494C20D3A2F600374361 /* TProcessor.h */,
+				EAAA494D20D3A2F600374361 /* TBaseClient.h */,
+				EAAA494E20D3A2F600374361 /* TError.m */,
+				EAAA494F20D3A2F600374361 /* TApplicationError.h */,
+			);
+			path = ThriftSrc;
+			sourceTree = "<group>";
+		};
+		EAAA491420D3A2F600374361 /* generated */ = {
+			isa = PBXGroup;
+			children = (
+				EAF8AB7F20DA3A580038F6AC /* ChatRoomServiceCallbackService.h */,
+				EAF8AB7E20DA3A580038F6AC /* ChatRoomServiceCallbackService.m */,
+				EAF8AB7C20DA3A580038F6AC /* ChatRoomServiceChatService.h */,
+				EAF8AB8220DA3A580038F6AC /* ChatRoomServiceChatService.m */,
+				EAF8AB8120DA3A580038F6AC /* ChatRoomServiceException.h */,
+				EAF8AB8020DA3A580038F6AC /* ChatRoomServiceException.m */,
+				EAF8AB7B20DA3A580038F6AC /* ChatRoomServiceStruct.h */,
+				EAF8AB7D20DA3A580038F6AC /* ChatRoomServiceStruct.m */,
+			);
+			path = generated;
+			sourceTree = "<group>";
+		};
+		EAAA491D20D3A2F600374361 /* transport */ = {
+			isa = PBXGroup;
+			children = (
+				EAAA491E20D3A2F600374361 /* TMemoryBuffer.m */,
+				EAAA491F20D3A2F600374361 /* TTransport.h */,
+				EAAA492020D3A2F600374361 /* THTTPTransport.m */,
+				EAAA492120D3A2F600374361 /* TFramedTransport.m */,
+				EAAA492220D3A2F600374361 /* TTransportError.h */,
+				EAAA492320D3A2F600374361 /* TAsyncTransport.h */,
+				EAAA492420D3A2F600374361 /* THTTPSessionTransport.h */,
+				EAAA492520D3A2F600374361 /* TNSStreamTransport.m */,
+				EAAA492620D3A2F600374361 /* TNSFileHandleTransport.m */,
+				EAAA492720D3A2F600374361 /* TSSLSocketTransport.h */,
+				EAAA492820D3A2F600374361 /* TSSLSocketTransportError.m */,
+				EAAA492920D3A2F600374361 /* TSocketTransport.h */,
+				EAAA492A20D3A2F600374361 /* TMemoryBuffer.h */,
+				EAAA492B20D3A2F600374361 /* TTransportError.m */,
+				EAAA492C20D3A2F600374361 /* TFramedTransport.h */,
+				EAAA492D20D3A2F600374361 /* THTTPTransport.h */,
+				EAAA492E20D3A2F600374361 /* TSocketTransport.m */,
+				EAAA492F20D3A2F600374361 /* TSSLSocketTransportError.h */,
+				EAAA493020D3A2F600374361 /* TSSLSocketTransport.m */,
+				EAAA493120D3A2F600374361 /* TNSFileHandleTransport.h */,
+				EAAA493220D3A2F600374361 /* TNSStreamTransport.h */,
+				EAAA493320D3A2F600374361 /* THTTPSessionTransport.m */,
+			);
+			path = transport;
+			sourceTree = "<group>";
+		};
+		EAAA493720D3A2F600374361 /* server */ = {
+			isa = PBXGroup;
+			children = (
+				EAAA493820D3A2F600374361 /* TSocketServer.m */,
+				EAAA493920D3A2F600374361 /* TSocketServer.h */,
+			);
+			path = server;
+			sourceTree = "<group>";
+		};
+		EAAA493A20D3A2F600374361 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				EAAA493B20D3A2F600374361 /* TProtocolUtil.m */,
+				EAAA493C20D3A2F600374361 /* TProtocolDecorator.h */,
+				EAAA493D20D3A2F600374361 /* TProtocolError.h */,
+				EAAA493E20D3A2F600374361 /* TBinaryProtocol.h */,
+				EAAA493F20D3A2F600374361 /* TCompactProtocol.h */,
+				EAAA494020D3A2F600374361 /* TMultiplexedProtocol.h */,
+				EAAA494120D3A2F600374361 /* TBase.h */,
+				EAAA494220D3A2F600374361 /* TProtocolDecorator.m */,
+				EAAA494320D3A2F600374361 /* TProtocolUtil.h */,
+				EAAA494420D3A2F600374361 /* TBinaryProtocol.m */,
+				EAAA494520D3A2F600374361 /* TProtocolError.m */,
+				EAAA494620D3A2F600374361 /* TProtocolFactory.h */,
+				EAAA494720D3A2F600374361 /* TMultiplexedProtocol.m */,
+				EAAA494820D3A2F600374361 /* TProtocol.h */,
+				EAAA494920D3A2F600374361 /* TCompactProtocol.m */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA095D7520D0CB66006E340F /* Thrift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA095DA220D0CB67006E340F /* Build configuration list for PBXNativeTarget "Thrift" */;
+			buildPhases = (
+				EA095D7220D0CB66006E340F /* Sources */,
+				EA095D7320D0CB66006E340F /* Frameworks */,
+				EA095D7420D0CB66006E340F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Thrift;
+			productName = Thrift;
+			productReference = EA095D7620D0CB66006E340F /* Thrift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA095D8D20D0CB67006E340F /* ThriftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA095DA520D0CB67006E340F /* Build configuration list for PBXNativeTarget "ThriftTests" */;
+			buildPhases = (
+				EA095D8A20D0CB67006E340F /* Sources */,
+				EA095D8B20D0CB67006E340F /* Frameworks */,
+				EA095D8C20D0CB67006E340F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA095D9020D0CB67006E340F /* PBXTargetDependency */,
+			);
+			name = ThriftTests;
+			productName = ThriftTests;
+			productReference = EA095D8E20D0CB67006E340F /* ThriftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EA095D9820D0CB67006E340F /* ThriftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA095DA820D0CB67006E340F /* Build configuration list for PBXNativeTarget "ThriftUITests" */;
+			buildPhases = (
+				EA095D9520D0CB67006E340F /* Sources */,
+				EA095D9620D0CB67006E340F /* Frameworks */,
+				EA095D9720D0CB67006E340F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA095D9B20D0CB67006E340F /* PBXTargetDependency */,
+			);
+			name = ThriftUITests;
+			productName = ThriftUITests;
+			productReference = EA095D9920D0CB67006E340F /* ThriftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA095D6E20D0CB66006E340F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = zhangyx;
+				TargetAttributes = {
+					EA095D7520D0CB66006E340F = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					EA095D8D20D0CB67006E340F = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = EA095D7520D0CB66006E340F;
+					};
+					EA095D9820D0CB67006E340F = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = EA095D7520D0CB66006E340F;
+					};
+				};
+			};
+			buildConfigurationList = EA095D7120D0CB66006E340F /* Build configuration list for PBXProject "Thrift" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA095D6D20D0CB66006E340F;
+			productRefGroup = EA095D7720D0CB66006E340F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA095D7520D0CB66006E340F /* Thrift */,
+				EA095D8D20D0CB67006E340F /* ThriftTests */,
+				EA095D9820D0CB67006E340F /* ThriftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA095D7420D0CB66006E340F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA095D8620D0CB67006E340F /* LaunchScreen.storyboard in Resources */,
+				EA095D8320D0CB67006E340F /* Assets.xcassets in Resources */,
+				EA095D8120D0CB66006E340F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA095D8C20D0CB67006E340F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA095D9720D0CB67006E340F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA095D7220D0CB66006E340F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA095D7E20D0CB66006E340F /* ViewController.m in Sources */,
+				EAAA495A20D3A2F600374361 /* TTransportError.m in Sources */,
+				EAAA495820D3A2F600374361 /* TNSFileHandleTransport.m in Sources */,
+				EAAA495720D3A2F600374361 /* TNSStreamTransport.m in Sources */,
+				EAAA496120D3A2F600374361 /* TProtocolDecorator.m in Sources */,
+				EAF8AB8620DA3A580038F6AC /* ChatRoomServiceChatService.m in Sources */,
+				EAAA496720D3A2F600374361 /* TError.m in Sources */,
+				EA095D8920D0CB67006E340F /* main.m in Sources */,
+				EAAA495420D3A2F600374361 /* TMemoryBuffer.m in Sources */,
+				EAAA495B20D3A2F600374361 /* TSocketTransport.m in Sources */,
+				EAF8AB8320DA3A580038F6AC /* ChatRoomServiceStruct.m in Sources */,
+				EAF8AB8520DA3A580038F6AC /* ChatRoomServiceException.m in Sources */,
+				EAAA496220D3A2F600374361 /* TBinaryProtocol.m in Sources */,
+				EAAA495E20D3A2F600374361 /* TBaseClient.m in Sources */,
+				EAAA495920D3A2F600374361 /* TSSLSocketTransportError.m in Sources */,
+				EAF8AB8420DA3A580038F6AC /* ChatRoomServiceCallbackService.m in Sources */,
+				EA095D7B20D0CB66006E340F /* AppDelegate.m in Sources */,
+				EAAA496420D3A2F600374361 /* TMultiplexedProtocol.m in Sources */,
+				EAAA496020D3A2F600374361 /* TProtocolUtil.m in Sources */,
+				EAAA495D20D3A2F600374361 /* THTTPSessionTransport.m in Sources */,
+				EA85E0AF20DA3C2C008C0DC6 /* ChatThriftFactory.m in Sources */,
+				EAAA495C20D3A2F600374361 /* TSSLSocketTransport.m in Sources */,
+				EAAA496320D3A2F600374361 /* TProtocolError.m in Sources */,
+				EAAA496620D3A2F600374361 /* TApplicationError.m in Sources */,
+				EAAA495520D3A2F600374361 /* THTTPTransport.m in Sources */,
+				EAAA495620D3A2F600374361 /* TFramedTransport.m in Sources */,
+				EAAA495F20D3A2F600374361 /* TSocketServer.m in Sources */,
+				EAAA496520D3A2F600374361 /* TCompactProtocol.m in Sources */,
+				EAAA495320D3A2F600374361 /* TSharedProcessorFactory.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA095D8A20D0CB67006E340F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA095D9320D0CB67006E340F /* ThriftTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA095D9520D0CB67006E340F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA095D9E20D0CB67006E340F /* ThriftUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA095D9020D0CB67006E340F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA095D7520D0CB66006E340F /* Thrift */;
+			targetProxy = EA095D8F20D0CB67006E340F /* PBXContainerItemProxy */;
+		};
+		EA095D9B20D0CB67006E340F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA095D7520D0CB66006E340F /* Thrift */;
+			targetProxy = EA095D9A20D0CB67006E340F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA095D7F20D0CB66006E340F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA095D8020D0CB66006E340F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA095D8420D0CB67006E340F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA095D8520D0CB67006E340F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA095DA020D0CB67006E340F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EA095DA120D0CB67006E340F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA095DA320D0CB67006E340F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = F5YQ82J8AN;
+				INFOPLIST_FILE = Thrift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = solar.Thrift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d2cb63d5-6a40-42f6-bf2d-d9d16de130cc";
+				PROVISIONING_PROFILE_SPECIFIER = development_profile_zst;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA095DA420D0CB67006E340F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = F5YQ82J8AN;
+				INFOPLIST_FILE = Thrift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = solar.Thrift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a81ad97e-10f4-4fda-a09d-a1eac3a8b187";
+				PROVISIONING_PROFILE_SPECIFIER = distribution_profile_zst;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EA095DA620D0CB67006E340F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ThriftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = solar.ThriftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thrift.app/Thrift";
+			};
+			name = Debug;
+		};
+		EA095DA720D0CB67006E340F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ThriftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = solar.ThriftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thrift.app/Thrift";
+			};
+			name = Release;
+		};
+		EA095DA920D0CB67006E340F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ThriftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = solar.ThriftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Thrift;
+			};
+			name = Debug;
+		};
+		EA095DAA20D0CB67006E340F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ThriftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = solar.ThriftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Thrift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA095D7120D0CB66006E340F /* Build configuration list for PBXProject "Thrift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA095DA020D0CB67006E340F /* Debug */,
+				EA095DA120D0CB67006E340F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA095DA220D0CB67006E340F /* Build configuration list for PBXNativeTarget "Thrift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA095DA320D0CB67006E340F /* Debug */,
+				EA095DA420D0CB67006E340F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA095DA520D0CB67006E340F /* Build configuration list for PBXNativeTarget "ThriftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA095DA620D0CB67006E340F /* Debug */,
+				EA095DA720D0CB67006E340F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA095DA820D0CB67006E340F /* Build configuration list for PBXNativeTarget "ThriftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA095DA920D0CB67006E340F /* Debug */,
+				EA095DAA20D0CB67006E340F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA095D6E20D0CB66006E340F /* Project object */;
+}
